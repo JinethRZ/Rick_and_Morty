@@ -1,0 +1,174 @@
+/*Selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*background-color: black;
+    font-size: 50px;*/   
+}    
+
+.titulos {
+    color: rgb(7, 3, 10);
+    background-color: blueviolet;
+}
+
+.flex-content{
+    height: 1000px;
+    background-color: red;
+    /*→Permite que los elementos hijos sean flexibles.*/
+    display: flex;
+    flex-direction: row; /*→alínea los elementos teniendo en cuenta la dirección*/
+    flex-wrap: wrap; /*bajar a otra línea el contenido.*/
+    justify-content: center; /*elementos quedan separados y con el mismo espacio entre sí.*/
+    align-items: flex-end;
+}
+
+.main-menu {
+    display: flex;
+    /* align-items→ alinea los elementos teniendo en cuenta el alto
+    justify-content→alinea los elementos teniendo en cuenta el ancho*/
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(202, 233, 24);
+    color: black;
+}
+
+.opt-menu{
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.opt-menu li{
+    list-style: none;
+    width: 15%;
+}
+
+.opt-menu a:hover{
+    background-color: salmon;
+    color: black;
+    border: 5px salmon solid;
+    border-radius: 30px;
+}
+
+.border-div {
+    background-color: red;
+    font-size: 50px;
+    /*Margenes→*/
+    /*margin: 5%; →Asigna 5% a todos los lados del div. margin-top: 10%;☺→asigna margenes arriba*/
+    margin: 5% 3% 0% 6%;/*→funciona en el orden de las manecillas del reloj*/
+    border: 10px blue solid;
+    border-bottom: 20px blue solid;
+    border-style: groove;
+
+}
+
+.container{
+    margin: 5% 10% 3% 8%;
+    text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+}
+
+.container p{
+    font-size: 2rem;
+}
+
+.container h1{
+    font-family: 'Yeseva One', cursive;
+}
+
+.main-characters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.character {
+    width: 25%;
+    margin: 3%;
+    border: 2px #E6E6E6 solid;
+    border-right: 3px #E6E6E6 solid;
+    border-bottom: 3px #E6E6E6 solid;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+    
+}
+
+.character div{
+    text-align: justify;
+    padding: 3%;
+    font-family: 'Sue Ellen Francisco', cursive;
+}
+
+.character h2{
+    font-weight: bold;
+    margin-bottom: 3%;
+    font-size: 2rem;
+    font-family: 'Amaranth', sans-serif;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 80px;
+    text-align: center;
+}
+
+footer p{
+    padding-top: 2%;
+}
+
+.fa-heart{
+    color: greenyellow;
+    font-size: 15px;
+}
+.opt-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-form {
+    margin-bottom: 2%;
+}
+
+.input-form div {
+    width: 30%;
+    float: left;
+}
+
+.input-form input {
+    width: 60%;
+}
+.form-button button{
+    background-color: black;
+    color: white;
+    border: 5px;
+    border-radius: 30px;
+    width: 5%;
+    height: 50px;
+}
+.options{
+    text-align: left;
+    width: 40%;
+}
+.options h4{
+    text-align: center;
+}
+.otp-deportes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.form-flex input{
+    height: 30px;
+    border: 2 px rgb(11, 112, 112) solid;
+    border-radius: 10px;
+}
